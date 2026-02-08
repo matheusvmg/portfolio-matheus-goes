@@ -36,7 +36,7 @@ const About: React.FC = () => {
               <img
                 className="w-full h-full object-cover"
                 alt="Retrato do Engenheiro de Software"
-                src="public/Selfie.jpg"
+                src="/Selfie.jpg"
               />
             </div>
           </div>

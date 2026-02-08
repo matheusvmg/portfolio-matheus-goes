@@ -76,7 +76,7 @@ export const PROJECTS: ProjectItem[] = [
     id: '1',
     title: 'Mondrian iOS Design System',
     category: 'Design System',
-    imageUrl: '/public/mondrian.png',
+    imageUrl: '/mondrian.png',
     colorClass: 'hover:bg-spring-green'
   }
 ];
