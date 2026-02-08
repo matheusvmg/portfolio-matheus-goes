@@ -3,32 +3,32 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-32 md:pt-48 pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center bg-spring-green">
+    <section className="pt-24 md:pt-48 pb-12 md:pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center bg-spring-green">
       <div className="max-w-5xl mx-auto">
         <span className="text-eggplant font-bold tracking-[0.25em] uppercase text-xs mb-6 block opacity-80 animate-fade-in">
           Engenharia de Software Full-stack & Mobile
         </span>
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 text-charcoal leading-[1.05]">
+        <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 text-charcoal leading-[1.05]">
           Desenvolvendo soluções <br />
           <span className="text-eggplant">robustas e escaláveis</span> <br />
           do Front ao Back-end.
         </h1>
-        <div className="flex flex-col sm:flex-row gap-6 justify-center mt-12">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mt-8 md:mt-12">
           <a
-            className="px-10 py-4 bg-charcoal text-white rounded font-bold text-xs tracking-[0.2em] uppercase hover:bg-eggplant transition-all shadow-xl shadow-charcoal/10"
+            className="px-8 py-3 md:px-10 md:py-4 bg-charcoal text-white rounded font-bold text-xs tracking-[0.2em] uppercase hover:bg-eggplant transition-all shadow-xl shadow-charcoal/10"
             href="#work"
           >
             Explorar Portfólio
           </a>
           <a
-            className="px-10 py-4 border-2 border-charcoal/10 hover:border-eggplant text-charcoal rounded font-bold text-xs tracking-[0.2em] uppercase transition-all"
+            className="px-8 py-3 md:px-10 md:py-4 border-2 border-charcoal/10 hover:border-eggplant text-charcoal rounded font-bold text-xs tracking-[0.2em] uppercase transition-all"
             href="#contact"
           >
             Iniciar Projeto
           </a>
         </div>
       </div>
-      <div className="mt-20 w-full max-w-6xl aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl border-[12px] border-white relative group">
+      <div className="mt-12 md:mt-20 w-full max-w-6xl aspect-[21/9] rounded-2xl overflow-hidden shadow-2xl border-4 md:border-[12px] border-white relative group">
         <img
           className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0"
           alt="Ambiente de desenvolvimento moderno"

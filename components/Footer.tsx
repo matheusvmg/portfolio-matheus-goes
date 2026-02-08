@@ -14,16 +14,16 @@ const Footer: React.FC = () => {
   }];
 
   return (
-    <footer className="py-32 px-6 bg-eggplant text-white overflow-hidden relative" id="contact">
+    <footer className="py-16 md:py-32 px-6 bg-eggplant text-white overflow-hidden relative" id="contact">
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        <h2 className="text-5xl md:text-8xl font-black mb-16 leading-[1.1] tracking-tighter">
+        <h2 className="text-4xl md:text-8xl font-black mb-10 md:mb-16 leading-[1.1] tracking-tighter">
           Vamos construir <br />
           seu próximo <span className="text-spring-green italic font-light">grande projeto.</span>
         </h2>
 
-        <div className="mb-24">
+        <div className="mb-12 md:mb-24">
           <a
-            className="text-2xl md:text-4xl font-light hover:text-spring-green transition-colors underline decoration-spring-green/30 underline-offset-[12px] decoration-2"
+            className="text-xl md:text-4xl font-light hover:text-spring-green transition-colors underline decoration-spring-green/30 underline-offset-[12px] decoration-2 break-all sm:break-normal"
             href="mailto:matheusvmg@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
           </a>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto border-t border-white/10 pt-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto border-t border-white/10 pt-10 md:pt-16">
           {socialLinks.map((link) => (
             <a
               key={link.name}
@@ -49,7 +49,7 @@ const Footer: React.FC = () => {
           ))}
         </div>
 
-        <div className="mt-40 flex flex-col md:flex-row justify-between items-center gap-8 text-white/40 text-[9px] font-bold uppercase tracking-[0.3em]">
+        <div className="mt-20 md:mt-40 flex flex-col md:flex-row justify-between items-center gap-8 text-white/40 text-[9px] font-bold uppercase tracking-[0.3em]">
           <p>© 2026 MATHEUS GÓES. TODOS OS DIREITOS RESERVADOS.</p>
           <button
             className="hover:text-white transition-colors flex items-center gap-3 group"
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
       </div>
 
       {/* Decorative BG element */}
-      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
+      <div className="absolute top-0 right-0 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-white/5 rounded-full blur-[60px] md:blur-[120px] -translate-y-1/2 translate-x-1/2"></div>
     </footer>
   );
 };

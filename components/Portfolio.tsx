@@ -4,11 +4,11 @@ import { PROJECTS } from '../constants';
 
 const Portfolio: React.FC = () => {
   return (
-    <section className="py-32 px-6 bg-white" id="work">
+    <section className="py-16 md:py-32 px-6 bg-white" id="work">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20">
           <span className="text-accent-green font-bold tracking-[0.3em] uppercase text-[10px]">Seleção Curada</span>
-          <h2 className="text-4xl md:text-5xl font-black mt-4 text-charcoal tracking-tight">Projetos em Destaque</h2>
+          <h2 className="text-3xl md:text-5xl font-black mt-4 text-charcoal tracking-tight">Projetos em Destaque</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
