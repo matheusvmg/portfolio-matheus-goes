@@ -1,31 +1,58 @@
-
-import React from 'react';
+import React from "react";
 
 const About: React.FC = () => {
   return (
-    <section className="py-16 md:py-32 px-6 bg-white overflow-hidden" id="about">
+    <section
+      className="py-16 md:py-32 px-6 bg-white overflow-hidden"
+      id="about"
+    >
       <div className="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         <div className="lg:col-span-7 space-y-8 md:space-y-12">
           <div>
-            <span className="text-accent-purple font-bold uppercase tracking-[0.25em] text-[10px]">Engenharia de Software</span>
+            <span className="text-accent-purple font-bold uppercase tracking-[0.25em] text-[10px]">
+              Engenharia de Software
+            </span>
             <h2 className="text-3xl md:text-6xl font-black text-charcoal mt-6 mb-8 leading-[1.15]">
-              Transformando Complexidade em <br />Soluções Escaláveis.
+              Transformando Complexidade em <br />
+              Soluções Escaláveis.
             </h2>
             <p className="text-lg md:text-xl text-charcoal/60 leading-relaxed font-light max-w-2xl">
-              Engenheiro de Software Sênior com mais de 5 anos de experiência construindo aplicações mobile e web de alta performance para empresas como GM Financial e Claro Brasil. Especializado em arquitetura de software, desenvolvimento React Native/iOS e liderança técnica de times de engenharia.
+              Engenheiro de Software com mais de 5 anos de experiência no
+              desenvolvimento de aplicações web e mobile. Atuei em projetos de
+              grande escala para empresas como Claro e GM Financial,
+              participando da definição de arquitetura, modernização de
+              sistemas, criação de Design Systems e liderança técnica. Possuo
+              sólida experiência com React, React Native, Node.js, TypeScript e
+              Swift, sempre com foco em qualidade, escalabilidade e boas
+              práticas de engenharia.
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
             <div className="p-6 md:p-10 bg-[#FCFCFC] border-l-4 border-eggplant group hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl hover:shadow-eggplant/5">
-              <h4 className="text-4xl md:text-5xl font-black text-eggplant mb-2">05+</h4>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal/40">Anos de Experiência</p>
-              <p className="mt-6 text-sm text-charcoal/50 leading-relaxed">Expertise em React Native, iOS nativo, React.js, Node.js e TypeScript. Foco em arquitetura de software e design systems enterprise.</p>
+              <h4 className="text-4xl md:text-5xl font-black text-eggplant mb-2">
+                05+
+              </h4>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal/40">
+                Anos de Experiência
+              </p>
+              <p className="mt-6 text-sm text-charcoal/50 leading-relaxed">
+                Expertise em React Native, iOS nativo, React.js, Node.js e
+                TypeScript. Foco em arquitetura de software e design systems
+                enterprise.
+              </p>
             </div>
             <div className="p-6 md:p-10 bg-[#FCFCFC] border-l-4 border-accent-green group hover:-translate-y-2 transition-transform duration-300 shadow-sm hover:shadow-xl hover:shadow-accent-green/5">
-              <h4 className="text-4xl md:text-5xl font-black text-eggplant mb-2">10M+</h4>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal/40">Usuários Impactados</p>
-              <p className="mt-6 text-sm text-charcoal/50 leading-relaxed">Aplicações mobile e web utilizadas por milhões de usuários em projetos para GM Financial e Claro Brasil.</p>
+              <h4 className="text-4xl md:text-5xl font-black text-eggplant mb-2">
+                10M+
+              </h4>
+              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-charcoal/40">
+                Usuários Impactados
+              </p>
+              <p className="mt-6 text-sm text-charcoal/50 leading-relaxed">
+                Aplicações mobile e web utilizadas por milhões de usuários em
+                projetos para GM Financial e Claro Brasil.
+              </p>
             </div>
           </div>
         </div>

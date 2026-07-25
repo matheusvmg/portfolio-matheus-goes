@@ -1,4 +1,3 @@
-
 export interface ExperienceItem {
   year: string;
   role: string;
@@ -15,4 +14,6 @@ export interface ProjectItem {
   category: string;
   imageUrl: string;
   colorClass: string;
+  description?: string;
+  link?: string;
 }

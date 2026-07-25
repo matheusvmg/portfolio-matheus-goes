@@ -1,11 +1,11 @@
-
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Portfolio from './components/Portfolio';
-import Footer from './components/Footer';
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Experience from "./components/Experience";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
+import Certifications from "./components/Certifications";
 
 const App: React.FC = () => {
   return (
@@ -15,6 +15,7 @@ const App: React.FC = () => {
         <Hero />
         <About />
         <Experience />
+        <Certifications />
         <Portfolio />
       </main>
       <Footer />

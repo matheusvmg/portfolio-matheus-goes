@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React from "react";
 
 const Hero: React.FC = () => {
   return (
@@ -25,6 +24,28 @@ const Hero: React.FC = () => {
             href="#contact"
           >
             Iniciar Projeto
+          </a>
+          <a
+            href="/documents/matheus-goes-curriculo.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-eggplant text-white font-bold text-sm tracking-[0.15em] uppercase hover:bg-eggplant/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              />
+            </svg>
+            Baixar Currículo
           </a>
         </div>
       </div>
