@@ -1,24 +1,33 @@
-
-import React from 'react';
+import React from "react";
 
 const Footer: React.FC = () => {
-  const socialLinks = [{
-    name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/matheusvmg/'
-  }, {
-    name: 'GitHub',
-    url: 'https://github.com/matheusvmg'
-  }, {
-    name: 'Substack',
-    url: 'https://mvmg.substack.com'
-  }];
+  const socialLinks = [
+    {
+      name: "LinkedIn",
+      url: "https://www.linkedin.com/in/matheusvmg/",
+    },
+    {
+      name: "GitHub",
+      url: "https://github.com/matheusvmg",
+    },
+    {
+      name: "Substack",
+      url: "https://mvmg.substack.com",
+    },
+  ];
 
   return (
-    <footer className="py-16 md:py-32 px-6 bg-eggplant text-white overflow-hidden relative" id="contact">
+    <footer
+      className="py-16 md:py-32 px-6 bg-eggplant text-white overflow-hidden relative"
+      id="contact"
+    >
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-8xl font-black mb-10 md:mb-16 leading-[1.1] tracking-tighter">
           Vamos construir <br />
-          seu próximo <span className="text-spring-green italic font-light">grande projeto.</span>
+          seu próximo{" "}
+          <span className="text-spring-green italic font-light">
+            grande projeto.
+          </span>
         </h2>
 
         <div className="mb-12 md:mb-24">
@@ -48,14 +57,25 @@ const Footer: React.FC = () => {
             </a>
           ))}
           <a
-            href="/documents/matheus-goes-curriculo.pdf"
+            href="/matheus-goes-curriculo.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-3"
           >
             <span className="flex items-center gap-2 text-[10px] font-bold tracking-[0.4em] uppercase group-hover:text-spring-green transition-colors">
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
               </svg>
               Currículo
             </span>
@@ -67,10 +87,12 @@ const Footer: React.FC = () => {
           <p>© 2026 MATHEUS GÓES. TODOS OS DIREITOS RESERVADOS.</p>
           <button
             className="hover:text-white transition-colors flex items-center gap-3 group"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             Voltar ao topo
-            <span className="material-symbols-outlined text-sm group-hover:-translate-y-1 transition-transform">north</span>
+            <span className="material-symbols-outlined text-sm group-hover:-translate-y-1 transition-transform">
+              north
+            </span>
           </button>
         </div>
       </div>

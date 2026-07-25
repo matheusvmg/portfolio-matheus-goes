@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             Iniciar Projeto
           </a>
           <a
-            href="/documents/matheus-goes-curriculo.pdf"
+            href="/matheus-goes-curriculo.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-eggplant text-white font-bold text-sm tracking-[0.15em] uppercase hover:bg-eggplant/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"

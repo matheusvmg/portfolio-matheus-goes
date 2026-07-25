@@ -157,6 +157,6 @@ export const CERTIFICATIONS: ProjectItem[] = [
     colorClass: "hover:bg-spring-green",
     description:
       "Certificação SCRUMstudy que atesta o conhecimento dos fundamentos do framework Scrum, incluindo papéis, eventos, artefatos e princípios ágeis para gerenciamento eficaz de projetos.",
-    link: "/documents/ScrumFundamentalsCertified-MatheusG%C3%B3es-1011433.pdf",
+    link: "/ScrumFundamentalsCertified-MatheusG%C3%B3es-1011433.pdf",
   },
 ];
