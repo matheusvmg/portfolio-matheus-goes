@@ -1,6 +1,9 @@
 import React from "react";
+import { useLocale } from "../i18n/LocaleContext";
 
 const Footer: React.FC = () => {
+  const { t } = useLocale();
+
   const socialLinks = [
     {
       name: "LinkedIn",
@@ -23,10 +26,10 @@ const Footer: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-8xl font-black mb-10 md:mb-16 leading-[1.1] tracking-tighter">
-          Vamos construir <br />
-          seu próximo{" "}
+          {t.footer.heading1} <br />
+          {t.footer.heading2}{" "}
           <span className="text-spring-green italic font-light">
-            grande projeto.
+            {t.footer.headingHighlight}
           </span>
         </h2>
 
@@ -77,19 +80,19 @@ const Footer: React.FC = () => {
                   d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
                 />
               </svg>
-              Currículo
+              {t.footer.cvLabel}
             </span>
             <div className="w-1 h-1 bg-spring-green rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
           </a>
         </div>
 
         <div className="mt-20 md:mt-40 flex flex-col md:flex-row justify-between items-center gap-8 text-white/40 text-[9px] font-bold uppercase tracking-[0.3em]">
-          <p>© 2026 MATHEUS GÓES. TODOS OS DIREITOS RESERVADOS.</p>
+          <p>{t.footer.copyright}</p>
           <button
             className="hover:text-white transition-colors flex items-center gap-3 group"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            Voltar ao topo
+            {t.footer.backToTop}
             <span className="material-symbols-outlined text-sm group-hover:-translate-y-1 transition-transform">
               north
             </span>

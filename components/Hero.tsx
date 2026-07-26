@@ -1,29 +1,33 @@
 import React from "react";
+import { useLocale } from "../i18n/LocaleContext";
 
 const Hero: React.FC = () => {
+  const { t } = useLocale();
+
   return (
     <section className="pt-24 md:pt-48 pb-12 md:pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center bg-spring-green">
       <div className="max-w-5xl mx-auto">
         <span className="text-eggplant font-bold tracking-[0.25em] uppercase text-xs mb-6 block opacity-80 animate-fade-in">
-          Engenharia de Software Full-stack & Mobile
+          {t.hero.subtitle}
         </span>
         <h1 className="text-4xl md:text-7xl lg:text-8xl font-black tracking-tight mb-8 text-charcoal leading-[1.05]">
-          Desenvolvendo soluções <br />
-          <span className="text-eggplant">robustas e escaláveis</span> <br />
-          do Front ao Back-end.
+          {t.hero.headingLine1} <br />
+          <span className="text-eggplant">{t.hero.headingHighlight}</span>{" "}
+          <br />
+          {t.hero.headingLine2}
         </h1>
         <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center mt-8 md:mt-12">
           <a
             className="px-8 py-3 md:px-10 md:py-4 bg-charcoal text-white rounded font-bold text-xs tracking-[0.2em] uppercase hover:bg-eggplant transition-all shadow-xl shadow-charcoal/10"
             href="#work"
           >
-            Explorar Portfólio
+            {t.hero.ctaPortfolio}
           </a>
           <a
             className="px-8 py-3 md:px-10 md:py-4 border-2 border-charcoal/10 hover:border-eggplant text-charcoal rounded font-bold text-xs tracking-[0.2em] uppercase transition-all"
             href="#contact"
           >
-            Iniciar Projeto
+            {t.hero.ctaContact}
           </a>
           <a
             href="/matheus-goes-curriculo.pdf"
@@ -45,7 +49,7 @@ const Hero: React.FC = () => {
                 d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
               />
             </svg>
-            Baixar Currículo
+            {t.hero.ctaDownloadCV}
           </a>
         </div>
       </div>
