@@ -2,7 +2,12 @@ import React from "react";
 import { useLocale } from "../i18n/LocaleContext";
 
 const Hero: React.FC = () => {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+
+  const cvPath =
+    locale === "pt-BR"
+      ? "/matheus-goes-curriculo.pdf"
+      : "/matheus-goes-resume.pdf";
 
   return (
     <section className="pt-24 md:pt-48 pb-12 md:pb-20 px-6 min-h-screen flex flex-col items-center justify-center text-center bg-spring-green">
@@ -30,7 +35,7 @@ const Hero: React.FC = () => {
             {t.hero.ctaContact}
           </a>
           <a
-            href="/matheus-goes-curriculo.pdf"
+            href={cvPath}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-eggplant text-white font-bold text-sm tracking-[0.15em] uppercase hover:bg-eggplant/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"

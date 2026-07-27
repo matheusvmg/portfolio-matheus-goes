@@ -2,7 +2,12 @@ import React from "react";
 import { useLocale } from "../i18n/LocaleContext";
 
 const Footer: React.FC = () => {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
+
+  const cvPath =
+    locale === "pt-BR"
+      ? "/matheus-goes-curriculo.pdf"
+      : "/matheus-goes-resume.pdf";
 
   const socialLinks = [
     {
@@ -60,7 +65,7 @@ const Footer: React.FC = () => {
             </a>
           ))}
           <a
-            href="/matheus-goes-curriculo.pdf"
+            href={cvPath}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center gap-3"
